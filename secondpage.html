@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information Page</title>
+
+<style type="text/css">
+	#bar{
+		background-color:lightblue;
+		width:100%;
+		height:60px;
+		padding:0px;
+		margin:0px;
+	}
+
+   .inside{
+	float:right;
+	display:inline-block;
+	position:relative;
+	top:10px;
+	color:white;
+	margin-right: 15px;
+	font-size: 25px;
+	text-decoration: none;
+}
+.inside:hover
+{
+	text-decoration: none;
+	color:orange;
+}
+
+.container{
+	position:relative;
+	top:30px;
+}
+
+span{
+	border:1px solid black;
+	position:relative;
+	left: 30px;
+	padding: 10px;
+	border-radius: 6px;
+	border-style:solid solid none solid;
+	font-size: 20px;
+}	
+
+#first , #second, #third{
+	border: 2px solid orange;
+	margin-top: 20px;
+	margin-left:200px;
+	width: 50%;
+}
+
+#first, #second, #third{
+	position:relative;
+	top:100px;
+	font-size: 22px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+.inform{
+	margin-top: 10px;
+}
+#line{
+	position:relative;
+	left: -47.5%;
+	top: 470px;
+	width: 77%;
+}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$("#first").animate({left: "200px"})
+	});
+</script>
+</head>
+
+<body>
+	<div id="bar">
+		<a href="firstpage.html" class="inside">
+			Login
+		</a>
+		<a href="javascript:void(0)" class="inside">
+			Contact Us
+		</a>
+		<a href="javascript:void(0)" class="inside">
+			Home
+		</a>
+	</div>
+
+<div class="container">
+	<span>Personal Information</span>
+	<hr style="width: 82%;position:relative;left: 105px">
+	<hr id="line" style="transform:rotate(90deg);">
+</div>
+
+<div class="container">
+ <div id="first">
+ 	<div class="inform">Id:"1"</div>
+ 	<div class="inform">Name:"test1"</div>
+ 	<div class="inform">Age:"11"</div>
+ 	<div class="inform">Gender:"Male"</div> 
+ 	<div class="inform">E-mail:"test1@gmail.com"</div> 	
+ 	<div class="inform">Phone No.:"9191919191"</div>		
+ </div>
+
+  <div id="second">
+ 	<div class="inform">Id:"2"</div>
+ 	<div class="inform">Name:"test2"</div>
+ 	<div class="inform">Age:"12"</div>
+ 	<div class="inform">Gender:"Male"</div> 
+ 	<div class="inform">E-mail:"test2@gmail.com"</div> 	
+ 	<div class="inform">Phone No.:"9292929292"</div>		
+ </div>
+
+  <div id="third">
+ 	<div class="inform">Id:"3"</div>
+ 	<div class="inform">Name:"test3"</div>
+ 	<div class="inform">Age:"13"</div>
+ 	<div class="inform">Gender:"Male"</div> 
+ 	<div class="inform">E-mail:"test3@gmail.com"</div> 	
+ 	<div class="inform">Phone No.:"9393939393"</div>		
+ </div>
+ </div>
+</body>
+</html>
